@@ -1,0 +1,11 @@
+<ul>
+    <% for(let i = list_cp.length; i > 0; i--) { %>
+        <% if (typeof list_cp[i] == 'object') { %>
+            <li>
+                <a href="/manga/<%= manga %>/<%= list_cp[i].link.replaceAll('/', '|') %>">
+                    <%= list_cp[i].title %>
+                </a> 
+            </li>
+        <% } %>
+    <% } %>
+</ul>
